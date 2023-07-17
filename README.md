@@ -9,3 +9,12 @@
 способы организации кода и API-интерфейсов, учитывая указанные в задании требования.
 Необходимо написать тесты для созданных методов.
 При разработке учитывать, что данных может быть очень много (миллионы занятий).
+
+# Notes
+https://wiki.archlinux.org/title/PostgreSQL - psql info
+
+# useful cli commands
+`sudo -iu postgres` - switch to postres user
+`psql -d moyklass-test` - launcg test db
+
+`\dt` - list tables

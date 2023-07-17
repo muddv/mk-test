@@ -1,9 +1,17 @@
-import Koa from 'koa'
+import express from 'express'
 
-const app = new Koa()
+const app = express()
 
-app.use(async ctx => {
-  ctx.body = 'Hello World'
+app.get('/', (req, res) => {
+    let greet = hello()
+    res.send(greet)
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+    console.log('Server is listening on http://localhost:3000')
+})
+
+function hello() {
+    return "hello"
+}
+
