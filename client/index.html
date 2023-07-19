@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src='./index.js' defer></script>
+    <link rel='stylesheet' href='./index.css'>
+    <title>submit query</title>
 </head>
+
 <body>
-    
+    <form>
+        <label for='title'>Lesson title</label>
+        <input id='title' type='text' name='title' placeholder='Lesson' />
+        <label for='date'>Lesson date</label>
+        <input id='date' type='date' name='date' />
+        <fieldset>
+            <legend>Search completed/uncompleted</legend>
+            <div>
+                <input type="radio" id="all" name="all" value="search all" checked>
+                <label for="all">Search all</label>
+            </div>
+
+            <div>
+                <input type="radio" id="completed" name="completed" value="completed">
+                <label for="completed">Search completed</label>
+            </div>
+
+            <div>
+                <input type="radio" id="uncompleted" name="uncompleted" value="uncompleted">
+                <label for="uncompleted">Search uncompleted</label>
+            </div>
+        </fieldset>
+        <label for="teachers">Teacher ids</label>
+        <input type="text" id="teachers" name="teachers" placeholder="1, 2">
+        <label for="students">Number of students</label>
+        <div>
+            <label for="switch">Input range</label>
+            <input type='checkbox' name='switch' id='switch' />
+        </div>
+        <div id='absolute'>
+            <input type="number" id="students" name="students" placeholder="10" min="0">
+        </div>
+        <div id='range'>
+            <div>
+                <label for="min">min</label>
+                <input type="number" id="min" name="min" placeholder="1" min="0">
+            </div>
+            <div>
+                <label for="max">max</label>
+                <input type="number" id="max" name="mex" placeholder="5" min="0">
+            </div>
+        </div>
+        <button type="submit">submit query</button>
+    </form>
 </body>
+
 </html>

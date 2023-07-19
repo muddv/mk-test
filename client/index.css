@@ -1,0 +1,10 @@
+form {
+	display: flex; 
+	flex-direction: column;
+	width: 500px;
+	gap: 10px;
+}
+
+.hidden {
+	display: none;
+}
