@@ -10,13 +10,6 @@
 Необходимо написать тесты для созданных методов.
 При разработке учитывать, что данных может быть очень много (миллионы занятий).
 
-# TODO 
-- [ ] REDO FILTER OPTIONS TYPE 
-- [ ] REDO FILTER OPTIONS TYPE
-- [ ] REDO FILTER OPTIONS TYPE
-- [ ] REDO FILTER OPTIONS TYPE
-- [ ] REDO FILTER OPTIONS TYPE
-
 # Notes
 https://wiki.archlinux.org/title/PostgreSQL - psql info
 
